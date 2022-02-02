@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mega Sena Generator</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="cabecalho">
+            <h1 class="titulo">Mega Sena Generator</h1>
+    </header>
+    <main>
+        <section class="respostas">
+            <fieldset class="fieldset__resultado--1-2 fieldset fieldset__space">
+                <legend class="legenda">Result Generator</legend>
+                    <h3 class="legenda__fonts">Click on the button below to generate lucky numbers</h3>
+                    <div class="inserir__numeros--resultado">
+                        <ul class="lista__resultado">
+                            <li class="lista-numeros" id="resultado-gerado--1">0</li>
+                            <li class="lista-numeros" id="resultado-gerado--2">0</li>
+                            <li class="lista-numeros" id="resultado-gerado--3">0</li>
+                            <li class="lista-numeros" id="resultado-gerado--4">0</li>
+                            <li class="lista-numeros" id="resultado-gerado--5">0</li>
+                            <li class="lista-numeros" id="resultado-gerado--6">0</li>
+                        </ul>
+                    </div>
+                    <button class="botao__resultado-numeros" data-botao-gerar-resultados>Generate</button>
+            </fieldset>
+            <fieldset class="fieldset__resultado--1-2 fieldset">
+                <legend class="legenda">Result Comparator</legend>
+                    <div class="inserir__numeros--resultado">
+                        <h3 class="legenda__fonts">Insert below the result you want to compare with the generated numbers</h3>
+                        <ul class="lista__resultado">
+                            <li class="lista-numeros" id="resultado-comparar--1">0</li>
+                            <li class="lista-numeros" id="resultado-comparar--2">0</li>
+                            <li class="lista-numeros" id="resultado-comparar--3">0</li>
+                            <li class="lista-numeros" id="resultado-comparar--4">0</li>
+                            <li class="lista-numeros" id="resultado-comparar--5">0</li>
+                            <li class="lista-numeros" id="resultado-comparar--6">0</li>
+                        </ul>
+                        <div class="inserir__numeros--div inserir__numeros--div-espaco">
+                            <input type="text" class="inserir__numeros--input" id="comparar__numeros--1">
+                            <input type="text" class="inserir__numeros--input" id="comparar__numeros--2">
+                            <input type="text" class="inserir__numeros--input" id="comparar__numeros--3">
+                            <input type="text" class="inserir__numeros--input" id="comparar__numeros--4">
+                            <input type="text" class="inserir__numeros--input" id="comparar__numeros--5">
+                            <input type="text" class="inserir__numeros--input" id="comparar__numeros--6">
+                        </div>
+                        <div class="botao__resultado-numeros" id="tentativas--1"></div>
+                        <div class="botao__resultado-numeros" id="tentativas--2"></div>
+                        <div class="botao__resultado-numeros" id="tentativas--3"></div>
+                        <div class="botao__resultado-numeros" id="tentativas--4"></div>
+                        <div class="botoes__comparador">
+                            <button class="botao__resultado-numeros" data-botao-parar-resultados>Save Result</button>
+                            <button class="botao__resultado-numeros" data-botao-resetar-resultado>New Result</button>
+                            <button class="botao__resultado-numeros" data-botao-comparar-resultados>Compare result</button>
+                        </div>
+                    </div>
+            </fieldset>
+        </section>
+        <div class="subtitulo__posicao">
+            <h2 class="legenda_meio">Insert the latest 10 Mega Sena results</h2>
+        </div>
+        <section class="inserir__numeros">
+            <form action="" class="formulario">
+                <fieldset class="fieldset fieldset__space">
+                    <legend class="legenda">Results 1 to 5</legend>
+                    <h3 class="escrito__site legenda__fonts">Insert the first 5 results</h3>
+                    <div class="inserir__numeros--resultado">
+                        <h3>Result 1</h3>
+                        <div class="inserir__numeros--div">
+                            <div class="inserir__numeros--div-espaco">
+                                <input type="text" class="inserir__numeros--input" id="numero-1">                          
+                                <input type="text" class="inserir__numeros--input" id="numero-2">
+                                <input type="text" class="inserir__numeros--input" id="numero-3">
+                                <input type="text" class="inserir__numeros--input" id="numero-4">
+                                <input type="text" class="inserir__numeros--input" id="numero-5">
+                                <input type="text" class="inserir__numeros--input" id="numero-6">
+                            </div>
+                            <div class="lista__menor">
+                            <ul class="lista__resultado">
+                                <li class="resultado-tela-li-1" id="resultado-tela--1"></li>
+                                <li class="resultado-tela-li-1" id="resultado-tela--2"></li>
+                                <li class="resultado-tela-li-1" id="resultado-tela--3"></li>
+                                <li class="resultado-tela-li-1" id="resultado-tela--4"></li>
+                                <li class="resultado-tela-li-1" id="resultado-tela--5"></li>
+                                <li class="resultado-tela-li-1" id="resultado-tela--6"></li>
+                            </div>
+                            </ul>
+                            <p  ></p>
+                        </div>
+
+                    </div>
+                    <div>
+                        <h3>Result 2</h3>
+                        <div class="inserir__numeros--div-espaco">
+                            <input type="text" class="inserir__numeros--input" id="numero-7">
+                            <input type="text" class="inserir__numeros--input" id="numero-8">
+                            <input type="text" class="inserir__numeros--input" id="numero-9">
+                            <input type="text" class="inserir__numeros--input" id="numero-10">
+                            <input type="text" class="inserir__numeros--input" id="numero-11">
+                            <input type="text" class="inserir__numeros--input" id="numero-12">
+                        </div>
+                        <ul class="lista__resultado">
+                            <li class="resultado-tela-li-2" id="resultado-tela--7"></li>
+                            <li class="resultado-tela-li-2" id="resultado-tela--8"></li>
+                            <li class="resultado-tela-li-2" id="resultado-tela--9"></li>
+                            <li class="resultado-tela-li-2" id="resultado-tela--10"></li>
+                            <li class="resultado-tela-li-2" id="resultado-tela--11"></li>
+                            <li class="resultado-tela-li-2" id="resultado-tela--12"></li>
+                    </div>
+                    <div>
+                        <h3>Result 3</h3>
+                        <div class="inserir__numeros--div-espaco">
+                            <input type="text" class="inserir__numeros--input" id="numero-13">
+                            <input type="text" class="inserir__numeros--input" id="numero-14">
+                            <input type="text" class="inserir__numeros--input" id="numero-15">
+                            <input type="text" class="inserir__numeros--input" id="numero-16">
+                            <input type="text" class="inserir__numeros--input" id="numero-17">
+                            <input type="text" class="inserir__numeros--input" id="numero-18">
+                        </div>
+                        <ul class="lista__resultado">
+                            <li class="resultado-tela-li" id="resultado-tela--13"></li>
+                            <li class="resultado-tela-li" id="resultado-tela--14"></li>
+                            <li class="resultado-tela-li" id="resultado-tela--15"></li>
+                            <li class="resultado-tela-li" id="resultado-tela--16"></li>
+                            <li class="resultado-tela-li" id="resultado-tela--17"></li>
+                            <li class="resultado-tela-li" id="resultado-tela--18"></li>
+                    </div>
+                    <div>
+                        <h3>Result 4</h3>
+                        <div class="inserir__numeros--div-espaco">
+                            <input type="text" class="inserir__numeros--input" id="numero-19">
+                            <input type="text" class="inserir__numeros--input" id="numero-20">
+                            <input type="text" class="inserir__numeros--input" id="numero-21">
+                            <input type="text" class="inserir__numeros--input" id="numero-22">
+                            <input type="text" class="inserir__numeros--input" id="numero-23">
+                            <input type="text" class="inserir__numeros--input" id="numero-24">
+                        </div>
+                        <ul class="lista__resultado">
+                            <li class="resultado-tela-li" id="resultado-tela--19"></li>
+                            <li class="resultado-tela-li" id="resultado-tela--20"></li>
+                            <li class="resultado-tela-li" id="resultado-tela--21"></li>
+                            <li class="resultado-tela-li" id="resultado-tela--22"></li>
+                            <li class="resultado-tela-li" id="resultado-tela--23"></li>
+                            <li class="resultado-tela-li" id="resultado-tela--24"></li>
+                    </div>
+                    <div>
+                        <h3>Result 5</h3>
+                        <div class="inserir__numeros--div-espaco">
+                            <input type="text" class="inserir__numeros--input" id="numero-25">
+                            <input type="text" class="inserir__numeros--input" id="numero-26">
+                            <input type="text" class="inserir__numeros--input" id="numero-27">
+                            <input type="text" class="inserir__numeros--input" id="numero-28">
+                            <input type="text" class="inserir__numeros--input" id="numero-29">
+                            <input type="text" class="inserir__numeros--input" id="numero-30">
+                        </div>
+                        <ul class="lista__resultado">
+                            <li class="resultado-tela-li" id="resultado-tela--25"></li>
+                            <li class="resultado-tela-li" id="resultado-tela--26"></li>
+                            <li class="resultado-tela-li" id="resultado-tela--27"></li>
+                            <li class="resultado-tela-li" id="resultado-tela--28"></li>
+                            <li class="resultado-tela-li" id="resultado-tela--29"></li>
+                            <li class="resultado-tela-li" id="resultado-tela--30"></li>
+                    </div>
+                </fieldset>
+                <fieldset class="fieldset">
+                    <legend class="legenda">Results 6 to 10</legend>
+                    <h3 class="escrito__site legenda__fonts">Insert the last 5 results</h3>
+                    <div>
+                        <h3>Result 6</h3>
+                        <div class="inserir__numeros--div-espaco">
+                            <input type="text" class="inserir__numeros--input" id="numero-31">
+                            <input type="text" class="inserir__numeros--input" id="numero-32">
+                            <input type="text" class="inserir__numeros--input" id="numero-33">
+                            <input type="text" class="inserir__numeros--input" id="numero-34">
+                            <input type="text" class="inserir__numeros--input" id="numero-35">
+                            <input type="text" class="inserir__numeros--input" id="numero-36">
+                        </div>
+                        <ul class="lista__resultado">
+                            <li class="resultado-tela-li" id="resultado-tela--31"></li>
+                            <li class="resultado-tela-li" id="resultado-tela--32"></li>
+                            <li class="resultado-tela-li" id="resultado-tela--33"></li>
+                            <li class="resultado-tela-li" id="resultado-tela--34"></li>
+                            <li class="resultado-tela-li" id="resultado-tela--35"></li>
+                            <li class="resultado-tela-li" id="resultado-tela--36"></li>
+                    </div>
+                    <div>
+                        <h3>Result 7</h3>
+                        <div class="inserir__numeros--div-espaco">
+                            <input type="text" class="inserir__numeros--input" id="numero-37">
+                            <input type="text" class="inserir__numeros--input" id="numero-38">
+                            <input type="text" class="inserir__numeros--input" id="numero-39">
+                            <input type="text" class="inserir__numeros--input" id="numero-40">
+                            <input type="text" class="inserir__numeros--input" id="numero-41">
+                            <input type="text" class="inserir__numeros--input" id="numero-42">
+                        </div>
+                        <ul class="lista__resultado">
+                            <li class="resultado-tela-li" id="resultado-tela--37"></li>
+                            <li class="resultado-tela-li" id="resultado-tela--38"></li>
+                            <li class="resultado-tela-li" id="resultado-tela--39"></li>
+                            <li class="resultado-tela-li" id="resultado-tela--40"></li>
+                            <li class="resultado-tela-li" id="resultado-tela--41"></li>
+                            <li class="resultado-tela-li" id="resultado-tela--42"></li>
+                    </div>
+                    <div>
+                        <h3>Result 8</h3>
+                        <div class="inserir__numeros--div-espaco">
+                            <input type="text" class="inserir__numeros--input" id="numero-43">
+                            <input type="text" class="inserir__numeros--input" id="numero-44">
+                            <input type="text" class="inserir__numeros--input" id="numero-45">
+                            <input type="text" class="inserir__numeros--input" id="numero-46">
+                            <input type="text" class="inserir__numeros--input" id="numero-47">
+                            <input type="text" class="inserir__numeros--input" id="numero-48">
+                        </div>
+                            <ul class="lista__resultado">
+                            <li class="resultado-tela-li" id="resultado-tela--43"></li>
+                            <li class="resultado-tela-li" id="resultado-tela--44"></li>
+                            <li class="resultado-tela-li" id="resultado-tela--45"></li>
+                            <li class="resultado-tela-li" id="resultado-tela--46"></li>
+                            <li class="resultado-tela-li" id="resultado-tela--47"></li>
+                            <li class="resultado-tela-li" id="resultado-tela--48"></li>
+                    </div>
+                    <div>
+                        <h3>Result 9</h3>
+                        <div class="inserir__numeros--div-espaco">
+                            <input type="text" class="inserir__numeros--input" id="numero-49">
+                            <input type="text" class="inserir__numeros--input" id="numero-50">
+                            <input type="text" class="inserir__numeros--input" id="numero-51">
+                            <input type="text" class="inserir__numeros--input" id="numero-52">
+                            <input type="text" class="inserir__numeros--input" id="numero-53">
+                            <input type="text" class="inserir__numeros--input" id="numero-54">
+                        </div>
+                        <ul class="lista__resultado">
+                            <li class="resultado-tela-li" id="resultado-tela--49"></li>
+                            <li class="resultado-tela-li" id="resultado-tela--50"></li>
+                            <li class="resultado-tela-li" id="resultado-tela--51"></li>
+                            <li class="resultado-tela-li" id="resultado-tela--52"></li>
+                            <li class="resultado-tela-li" id="resultado-tela--53"></li>
+                            <li class="resultado-tela-li" id="resultado-tela--54"></li>
+                    </div>
+                    <div>
+                        <h3>Result 10</h3>
+                        <div class="inserir__numeros--div-espaco">
+                            <input type="text" class="inserir__numeros--input" id="numero-55">
+                            <input type="text" class="inserir__numeros--input" id="numero-56">
+                            <input type="text" class="inserir__numeros--input" id="numero-57">
+                            <input type="text" class="inserir__numeros--input" id="numero-58">
+                            <input type="text" class="inserir__numeros--input" id="numero-59">
+                            <input type="text" class="inserir__numeros--input" id="numero-60">
+                        </div>
+                        <ul class="lista__resultado">
+                            <li class="resultado-tela-li" id="resultado-tela--55"></li>
+                            <li class="resultado-tela-li" id="resultado-tela--56"></li>
+                            <li class="resultado-tela-li" id="resultado-tela--57"></li>
+                            <li class="resultado-tela-li" id="resultado-tela--58"></li>
+                            <li class="resultado-tela-li" id="resultado-tela--59"></li>
+                            <li class="resultado-tela-li" id="resultado-tela--60"></li>
+                    </div>
+                </fieldset>           
+            </form>
+            <div class="botao">
+                    <button class="botao__gerar" data-botao-salvar-resultados>Save Results</button>
+                    <button class="botao__gerar" data-botao-adicionar-resultado>Add 6 Numbers</button>
+                    <button class="botao__gerar" data-botao-adicionar-60>Add Numbers 1 to 60</button>
+                    <button class="botao__gerar" data-botao-resetar-resultados>Reset Results</button>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="footer__titulo">&copy; Mega Sena Generator</p>
+      </footer>
+    <script type="module" src="./js/index.js"></script> 
+</body>
+</html>
