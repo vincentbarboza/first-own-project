@@ -1,5 +1,5 @@
 # first-own-project
-It is the first project I made entirely by myself. In it I used the following settings:
+It is the first project I made entirely by myself, and I used the following settings:
 *	Javascript
 *	HTML5 and CSS3
 *	Flexbox
